@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'KalaRembulanDemoRegular';
+  src: url('/assets/fonts/KalaRembulanDemoRegular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MisteriCaps';
+  src: url('/assets/fonts/MisteriCaps-8Mxyz.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mystical-WyLzz';
+  src: url('/assets/fonts/Mystical-WyLzz.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

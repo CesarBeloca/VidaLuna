@@ -1,0 +1,43 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background-image: url('/assets/images/cgpt_Bg.png');
+  background-size: contain;
+  background-position: left;
+  background-repeat: repeat;
+}
+
+:host::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 22%;
+  left: 40%;
+  transform: translate(-50%, -50%); /* optional: centers the text on that point */
+  z-index: 2;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+h
+
+h4 {
+  font-family: Times New Roman, Times New Roman, serif;
+  margin: 0;
+  /*border: 1px solid red;*/
+}
+
+.hero-text h4 {
+  margin-left: 4rem;
+  margin-top: -1.3rem;
+  font-size: 1.4rem;
+}

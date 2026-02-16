@@ -1,0 +1,28 @@
+<div
+  class="drawer-backdrop"
+  *ngIf="isOpen$ | async"
+  (click)="close()"></div>
+<div
+  class="drawer-panel"
+  [class.open]="isOpen$ | async ">
+  <button
+    class="drawer-close  menu-toggle"
+    (click)="close()">
+    <img
+      src="../../assets/images/xHandwritten.png"
+      alt="Menu button"
+      class="x-logo"
+      [class.hidden]="!(isOpen$ | async)">
+  </button>
+  <nav>
+    <ul>
+      <li><a routerLink="/about" (click)="close()">About</a></li>
+      <li><a routerLink="/concept" (click)="close()">Potions</a></li>
+      <li><a routerLink="/events" (click)="close()">Events</a></li>
+      <li><a routerLink="/free" (click)="close()">Free</a></li>
+<!--      <li><a routerLink="/home" (click)="close()">Home</a></li>-->
+      <li><a routerLink="/blog" (click)="close()">Moon Notes</a></li>
+      <li><a routerLink="/signup" (click)="close()">Sign Up</a></li>
+    </ul>
+  </nav>
+</div>

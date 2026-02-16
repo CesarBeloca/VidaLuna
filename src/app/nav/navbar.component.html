@@ -1,0 +1,28 @@
+<header class="navbar">
+  <div class="navbar-logo">
+    <a routerLink="/home" (click)="close()">
+      <img
+        src="../../assets/images/vlText.png"
+        class="nameLogo"
+        alt="Vida Luna logo">
+    </a>
+  </div>
+  <div>
+    <button
+      class="menu-toggle"
+      (click)="toggleMenu()">
+<!--      <img-->
+<!--        src="../../assets/xHandwritten.png"-->
+<!--        alt="Menu button"-->
+<!--        class="menu-icon x-logo"-->
+<!--        [class.hidden]="!(menuState.isOpen$ | async)">-->
+      <img
+        src="../../assets/images/vlLogo.png"
+        alt="Menu button"
+        class="menu-icon eye-logo"
+        [class.hidden]="menuState.isOpen$ | async"
+      >
+    </button>
+  </div>
+</header>
+
