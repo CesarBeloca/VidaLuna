@@ -28,11 +28,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-#      - name: Run tests
-#        run: npm run test:ci
+      #      - name: Run tests
+      #        run: npm run test:ci
 
       - name: Build
         run: npm run build -- --configuration production --base-href /VidaLuna/
+
+      - name: 🔍 Find the actual build output
+        run: |
+          echo "=== SEARCHING FOR INDEX.HTML ==="
+          find . -name "index.html" -type f | head -10
+          echo "=== CHECKING dist STRUCTURE ==="
+          ls -la dist/ || echo "dist/ not found"
+          ls -la dist/*/ || echo "no subfolders"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
