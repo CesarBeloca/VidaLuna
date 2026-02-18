@@ -1,7 +1,7 @@
 :host {
   display: block;
   min-height: 100vh;
-  background-image: url('/assets/images/cgpt_Bg.png');
+  background-image: url('../../assets/images/cgpt_Bg.png');
   background-size: contain;
   background-position: left;
   background-repeat: repeat;
@@ -27,8 +27,6 @@
   color: white;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
-
-h
 
 h4 {
   font-family: Times New Roman, Times New Roman, serif;
